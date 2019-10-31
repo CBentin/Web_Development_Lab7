@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel = "stylesheet" href = "./css/main.css" type = "text/css"/>
+        <title>Blog Post</title>
+        <meta charset = "UTF-8"/>
+    </head>
+    <body>
+        <header>
+            <h1>Blog post api test</h1>
+        </header>
+        <main>
+            <div id = "radioOptions">
+                <span><input id="all" type="radio" name="input" value = "All"/>
+                      <label for="all">Get all</label>
+                </span>
+                <span><input id="author" type="radio" name="input" value = "Author"/>
+                      <label for="author">Get by author</label>
+                </span>
+                <span><input id="post" type="radio" name="input" value = "Post"/>
+                      <label for="post">Post new</label>
+                </span>
+                <span><input id="delete" type="radio" name="input" value = "Delete"/>
+                      <label for="delete">Delete by id</label>
+                </span>
+                <span><input id="put" type="radio" name="input" value = "Update"/>
+                      <label for="put">Update</label>
+                </span>
+            </div>
+            <form id = "inputForm">
+                <div id = "textInputContainer"></div>
+                <button type = "submit" id = "submitButton">Submit</button>
+            </form>
+            <ul id = "blogPostsList" type = "none">
+            </ul>
+
+        </main>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
